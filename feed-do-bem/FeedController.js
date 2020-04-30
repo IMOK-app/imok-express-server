@@ -1,8 +1,4 @@
-const express = require('express');
-const router = new express.Router();
-
-const bodyParser = require('body-parser');
-const randomInt = require('random-int');
+const router = require('express').Router();
 const feedService = require('./FeedService');
 
 router.get('/posts/:UID', (req, res) => {

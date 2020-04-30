@@ -1,7 +1,4 @@
-const express = require('express');
-const router = new express.Router();
-
-const bodyParser = require('body-parser')
+const router = require('express').Router();
 const accountService = require('./AccountService');
 
 router.get("/accounts/:UID", (req, res) => {

@@ -18,6 +18,4 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(require('./account/AccountController'));
 app.use(require('./feed-do-bem/FeedController'));
 
-app.listen(process.env.PORT, () => {
-    console.log(`Servidor inicializado com sucesso na porta ${process.env.PORT}!`);
-})
+app.listen(process.env.PORT, () => console.log(`Servidor inicializado com sucesso na porta ${process.env.PORT}!`))
